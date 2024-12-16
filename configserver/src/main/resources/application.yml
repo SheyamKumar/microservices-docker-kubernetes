@@ -1,14 +1,32 @@
 server:
   port: 8071
 
+#this property is for git config mapping
 spring:
   application:
     name: "configServer"
   profiles:
-    active: native
+    active: git
   cloud:
     config:
       server:
-        native:
-#          search-locations: "classpath:/configs"
-          search-locations: "file:///c://Users//Sheyam Kumar Sakthi//workspace//MicroServices//AccountLoanCardsMS//config_file_path//configs"
+        git:
+          uri: "https://github.com/SheyamKumar/microservices-docker-kubernetes.git"
+          search-paths: "config_file_path/configs"
+          default-label: "master"
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+
+# this property is used for class path or file config
+#spring:
+#  application:
+#    name: "configServer"
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          #          search-locations: "classpath:/configs"
+#          search-locations: "file:///c://Users//Sheyam Kumar Sakthi//workspace//MicroServices//AccountLoanCardsMS//config_file_path//configs"
