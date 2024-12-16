@@ -18,6 +18,9 @@ spring:
           clone-on-start: true
           force-pull: true
 
+encrypt:
+  key: 99223EDEB1525A17F346189D153B2
+
 # this property is used for class path or file config
 #spring:
 #  application:
