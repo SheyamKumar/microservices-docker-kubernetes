@@ -1,0 +1,14 @@
+server:
+  port: 8071
+
+spring:
+  application:
+    name: "configServer"
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+#          search-locations: "classpath:/configs"
+          search-locations: "file:///c://Users//Sheyam Kumar Sakthi//workspace//MicroServices//AccountLoanCardsMS//config_file_path//configs"
