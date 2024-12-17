@@ -17,9 +17,20 @@ spring:
           timeout: 5
           clone-on-start: true
           force-pull: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
 encrypt:
   key: 99223EDEB1525A17F346189D153B2
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 
 # this property is used for class path or file config
 #spring:

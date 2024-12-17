@@ -1,0 +1,16 @@
+Open Power Shell and run the below cmd to bring up the
+1) Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+hookdeck listen 8071 Source --path /monitor
+
+Result:
+
+Dashboard
+👉 Inspect and replay events: https://dashboard.hookdeck.com
+
+Sources
+🔌 Source URL: https://hkdk.events/g501zum2hcynm7
+
+Connections
+Source -> Source_to_cli-Source forwarding to /monitor
