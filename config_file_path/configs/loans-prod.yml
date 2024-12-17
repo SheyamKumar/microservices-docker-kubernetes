@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 loans:
-  message: "Welcome to Banking loans related prod-3 APIs "
+  message: "Welcome to Banking loans related prod-4 APIs "
   contactDetails:
     name: "Sheyam - Prodcut Lead"
     email: "Sheyam@123.com"
