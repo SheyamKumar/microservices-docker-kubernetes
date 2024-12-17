@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 cards:
-  message: "Welcome to Banking cards related rpoduction APIs "
+  message: "Welcome to Banking cards related prod APIs "
   contactDetails:
     name: "Sheyam Kumar - Product Owner"
     email: "SheyamKumar@123.com"
