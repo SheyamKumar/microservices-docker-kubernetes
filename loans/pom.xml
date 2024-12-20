@@ -84,12 +84,12 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-<!--						<name>sheyamkumar/loans:loansms</name>-->
+&lt;!&ndash;						<name>sheyamkumar/loans:loansms</name>&ndash;&gt;
 						<name>sheyamkumar/${project.artifactId}:loansms</name>
 					</image>
 					<excludes>
@@ -99,7 +99,7 @@
 						</exclude>
 					</excludes>
 				</configuration>
-			</plugin>
+			</plugin>-->
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>

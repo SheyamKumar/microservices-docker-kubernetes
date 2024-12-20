@@ -15,13 +15,13 @@ spring:
       ddl-auto: update
     show-sql: true
   config:
-    import: "configserver:http://localhost:8071/"
+    import: "configserver:http://configserver:8071/"
   profiles:
     active: "prod"
   application:
     name: "loans"
   rabbitmq:
-    host: "localhost"
+    host: "rabbit"
     port: 5672
     username: "guest"
     password: "guest"
